@@ -1,48 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blockpub</title>
+    <title>BlokPub - Le Bloqueur Intelligent</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <h1>BlokPub</h1>
 
-<div class="section">
-    <h3>Qui sommes-nous ?</h3>
-    <p><strong>Présentation du projet :</strong> BlokPub est un logiciel léger et open-source développé en Python, conçu pour vous offrir une expérience de navigation plus propre, plus rapide et surtout plus respectueuse de votre vie privée.</p>
-    <p>Dans un monde numérique où chaque site web cherche à afficher des bannières publicitaires intrusives et à suivre vos moindres faits et gestes en ligne, BlokPub agit comme un bouclier intelligent directement sur votre machine.</p>
-</div>
+<div class="content-container"> <div class="section">
+        <h3>Qui sommes-nous ?</h3>
+        <p><strong>Présentation du projet :</strong> BlokPub est un logiciel léger et open-source développé en Python, conçu pour vous offrir une expérience de navigation plus propre, plus rapide et surtout plus respectueuse de votre vie privée.</p>
+        <p>Dans un monde numérique où chaque site web cherche à afficher des bannières publicitaires intrusives et à suivre vos moindres faits et gestes en ligne, BlokPub agit comme un bouclier intelligent directement sur votre machine.</p>
+    </div>
 
-<div class="section">
-    <h3>Fonctionnalités principales</h3>
-    <ul>
-        <li><strong>Blocage global des publicités :</strong> Empêche le chargement des bannières publicitaires, des pop-ups et des vidéos publicitaires agaçantes sur vos applications et navigateurs compatibles.</li>
-        <li><strong>Protection contre le tracking :</strong> Intercepte et bloque les scripts de traçage invisibles, les cookies publicitaires tiers et les mouchards qui espionnent vos habitudes de navigation.</li>
-        <li><strong>Léger et rapide :</strong> Écrit entièrement en Python, le logiciel consomme très peu de ressources système (mémoire vive et processeur) pour ne pas ralentir votre ordinateur.</li>
-        <li><strong>Mise à jour des listes :</strong> Se connecte régulièrement à des listes de serveurs malveillants et publicitaires reconnus (type hosts ou filtres open-source) pour rester efficace face aux nouvelles menaces.</li>
-    </ul>
-</div>
+    <div class="section">
+        <h3>Fonctionnalités principales</h3>
+        <ul>
+            <li><strong>Blocage global des publicités :</strong> Empêche le chargement des bannières publicitaires, des pop-ups et des vidéos publicitaires agaçantes sur vos applications et navigateurs compatibles.</li>
+            <li><strong>Protection contre le tracking :</strong> Intercepte et bloque les scripts de traçage invisibles, les cookies publicitaires tiers et les mouchards qui espionnent vos habitudes de navigation.</li>
+            <li><strong>Léger et rapide :</strong> Écrit entièrement en Python, le logiciel consomme très peu de ressources système (mémoire vive et processeur) pour ne pas ralentir votre ordinateur.</li>
+            <li><strong>Mise à jour des listes :</strong> Se connecte régulièrement à des listes de serveurs malveillants et publicitaires reconnus (type hosts ou filtres open-source) pour rester efficace face aux nouvelles menaces.</li>
+        </ul>
+    </div>
 
-<div class="section">
-    <h3>Comment ça fonctionne sous le capot (en Python) ?</h3>
-    <p>Le principe de base d'un bloqueur de publicités local comme BlokPub repose généralement sur la modification ou la gestion du fichier hosts de votre système d'exploitation, ou sur la mise en place d'un serveur DNS local (Proxy/DNS sinkhole).</p>
-    <p>Voici un aperçu simplifié de la logique en Python :</p>
-    <ul>
-        <li><strong>Récupération des listes :</strong> Le script télécharge des listes noires actualisées répertoriant les noms de domaines des régies publicitaires et des traqueurs.</li>
-        <li><strong>Filtrage des requêtes :</strong> Lorsque votre ordinateur essaie de se connecter à un site, le logiciel vérifie si l'adresse demandée se trouve dans la liste noire.</li>
-        <li><strong>Redirection (Blocage) :</strong> Si l'adresse est reconnue comme une pub ou un traqueur, la requête est redirigée vers une adresse nulle (127.0.0.1), ce qui empêche le contenu indésirable de s'afficher.</li>
-    </ul>
-</div>
+    <div class="section">
+        <h3>Comment ça fonctionne ?</h3>
+        <p>Le principe de base d'un bloqueur de publicités local comme BlokPub repose généralement sur la modification ou la gestion du fichier hosts de votre système d'exploitation, ou sur la mise en place d'un serveur DNS local.</p>
+        <p>Voici un aperçu simplifié de la logique en Python :</p>
+        <ul>
+            <li><strong>Récupération des listes :</strong> Le script télécharge des listes noires actualisées répertoriant les noms de domaines des régies publicitaires et des traqueurs.</li>
+            <li><strong>Filtrage des requêtes :</strong> Lorsque votre ordinateur essaie de se connecter à un site, le logiciel vérifie si l'adresse demandée se trouve dans la liste noire.</li>
+            <li><strong>Redirection (Blocage) :</strong> Si l'adresse est reconnue comme une pub ou un traqueur, la requête est redirigée vers une adresse nulle (127.0.0.1), ce qui empêche le contenu indésirable de s'afficher.</li>
+        </ul>
+    </div>
 
-<div class="section">
-    <h3>Pourquoi choisir BlokPub ?</h3>
-    <ul>
-        <li><strong>100% Transparent :</strong> Le code est entièrement visible, modifiable et auditable par la communauté.</li>
-        <li><strong>Zéro Publicité cachée :</strong> Contrairement à certaines extensions de navigateurs douteuses qui revendent vos données, BlokPub protège réellement votre vie privée.</li>
-        <li><strong>Idéal pour apprendre :</strong> C'est un excellent projet pour progresser en Python, en programmation réseau et en cybersécurité !</li>
-    </ul>
+    <div class="section">
+        <h3>Pourquoi choisir BlokPub ?</h3>
+        <ul>
+            <li><strong>100% Transparent :</strong> Le code est entièrement visible, modifiable et auditable par la communauté.</li>
+            <li><strong>Zéro Publicité cachée :</strong> Contrairement à certaines extensions de navigateurs douteuses qui revendent vos données, BlokPub protège réellement votre vie privée.</li>
+            <li><strong>Idéal pour apprendre :</strong> C'est un excellent projet pour progresser en Python, en programmation réseau et en cybersécurité !</li>
+        </ul>
+    </div>
+</div> 
+<div class="button-container">
+    <a href="#" class="download-btn">Download BlokPub</a>
 </div>
 </body>
 </html>
